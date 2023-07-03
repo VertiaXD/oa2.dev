@@ -4,6 +4,7 @@ Mariadb/MySQL Server
 Datacenter/Residential Proxy
 Optional:
 PM2
+
 🚀 Installation
 You need to follow the steps below one by one:
 For Linux: ./install.sh
