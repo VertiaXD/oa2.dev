@@ -1,0 +1,43 @@
+<html>
+
+<head>
+
+    <title>❌ Error</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css"
+        integrity="sha384-CCTZv2q9I9m3UOxRLaJneXrrqKwUNOzZ6NGEUMwHtShDJ+nCoiXJCAgi05KfkLGY" crossorigin="anonymous">
+
+    <style>
+        html,
+        body {
+            background: linear-gradient(130deg, #bb0000, #300000);
+            color: #fff;
+            text-align: center;
+            padding: 2em 1em;
+        }
+
+        p {
+            color: #fff;
+        }
+
+        .text-middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pure-g">
+        <div class="pure-u-1-1">
+            <div class="text-middle">
+                <p style="font-size: 2em;">❌ Error</p>
+                <p style="font-size: 1em;">{{error}}</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

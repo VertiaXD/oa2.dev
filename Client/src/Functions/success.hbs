@@ -1,0 +1,65 @@
+<html>
+
+<head>
+
+    <title>{{title}}</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css"
+        integrity="sha384-CCTZv2q9I9m3UOxRLaJneXrrqKwUNOzZ6NGEUMwHtShDJ+nCoiXJCAgi05KfkLGY" crossorigin="anonymous">
+
+    <style>
+        html,
+        body {
+            background: linear-gradient(130deg, {{color.main}}, {{color.gradient}});
+            color: #fff;
+            text-align: center;
+            padding: 2em 1em;
+        }
+
+        p {
+            color: #fff;
+        }
+
+        .text-middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        span {
+            color: {{ color.main }};
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pure-g">
+        <div class="pure-u-1-1">
+            <div class="text-middle">
+                <p style="font-size: 2em;">{{title}}</p>
+                <p style="font-size: 1em;">{{message}}<br>Redirection dans <span id="counter">5</span> secondes.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var counter = 5;
+    setInterval(function () {
+        counter--;
+        if (counter >= 0) {
+            span = document.getElementById("counter");
+            span.innerHTML = counter;
+        }
+        if (counter === 0) {
+            clearInterval(counter);
+            window.close();
+            return;
+        }
+    }, 1000);
+</script>
+
+</html>

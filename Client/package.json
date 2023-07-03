@@ -1,0 +1,28 @@
+{
+    "version": "0.1.9",
+    "main": "index.ts",
+    "scripts": {
+        "run": "ts-node .",
+        "dev": "ts-node-dev .",
+        "build": "rm -fr dist && npx tsc && cp src/Functions/error.hbs src/Functions/success.hbs dist/Client/src/Functions"
+    },
+    "author": "M1000.fr#0001",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "@discordjs/rest": "^1.6.0",
+        "@types/node": "^18.15.3",
+        "discord.js": "^14.8.0",
+        "dotenv": "^16.0.3",
+        "handlebars": "^4.7.7",
+        "https-proxy-agent": "^5.0.1",
+        "mariadb": "^3.1.0",
+        "moment": "^2.29.4",
+        "node-fetch": "^2.6.9",
+        "random-unicode-emoji": "^1.0.2",
+        "sequelize": "^6.29.3",
+        "socket.io-client": "^4.6.1"
+    },
+    "devDependencies": {
+        "@types/node-fetch": "^2.6.2"
+    }
+}

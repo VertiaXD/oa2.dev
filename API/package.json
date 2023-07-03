@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@fastify/express": "^2.1.0",
+    "fastify": "^4.9.2",
+    "mariadb": "^3.0.1",
+    "moment": "^2.29.4",
+    "sequelize": "^6.25.3",
+    "socket.io": "^4.5.3",
+    "typescript": "^5.0.3"
+  },
+  "scripts": {
+    "start": "node dist/index.js"
+  }
+}
